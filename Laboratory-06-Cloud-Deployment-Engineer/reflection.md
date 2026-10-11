@@ -1,1 +1,10 @@
+Mission Reflection
+Completing Mission 6 helped me understand how Docker Compose makes a cloud engineer's job easier. Instead of typing separate commands for every container, I can write the settings in one docker-compose.yml file. This makes the deployment process faster, more organized, and easier to repeat. It also helps reduce mistakes because the configuration is saved in one place and can be shared with other team members.
 
+I learned that YAML indentation is important because it shows how the configuration is organized. If I use a Tab instead of spaces or place a line at the wrong indentation level, Docker Compose may report an error or interpret the configuration incorrectly. The file may not work until I fix the formatting, so checking the YAML carefully is an important step before deployment.
+
+We used environment variables such as MYSQL_PASSWORD, MYSQL_DATABASE, and MYSQL_USER to configure the database and help Nextcloud connect to it. The MYSQL_HOST=database setting tells Nextcloud the name of the database service. These variables make the configuration easier to understand and update. For a real production system, sensitive passwords should be stored securely instead of being exposed in a configuration file.
+
+Deploying Nextcloud with MariaDB was exciting because it showed me that a cloud storage application can be set up by running only a few commands after preparing the configuration. It helped me see how different containers work together and how users can access an application through a browser.
+
+Since Mission 1, my understanding of cloud computing has grown. I now understand that cloud computing is not only about storing files online. It also involves setting up infrastructure, connecting services, managing containers, and documenting the deployment process. This mission introduced me to Infrastructure as Code because the Compose file describes the services in a reusable format. Overall, I gained more confidence in using Linux commands, Docker, and GitHub to build and document cloud applications.
