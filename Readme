@@ -1,0 +1,37 @@
+Laboratory 04 — Cloud-Native Engineer
+
+Mission Overview
+
+This laboratory activity focuses on understanding the shift from traditional virtualization to containerization. The goal is to compare Virtual Machines and Containers, verify Docker environment status, deploy a containerized Nginx web server, and manage the full lifecycle of a container using Docker commands.
+
+Objectives
+
+Differentiate traditional Virtual Machines from Containers
+Verify Docker installation and environment status
+Execute basic Docker commands to pull and run images
+Deploy and access a containerized web application
+Manage container lifecycle: list, stop, check, and remove
+Create organized technical documentation using Markdown
+Docker Commands Used
+
+docker --version
+docker info
+docker pull nginx
+docker run -d -p 8080:80 --name my-nginx nginx
+curl http://localhost:8080
+docker ps
+docker stop my-nginx
+docker ps -a
+docker rm my-nginx
+Skills Learned
+
+How to use Docker Command Line Interface
+Key differences between Virtual Machines and Containers
+How port mapping works between host and container
+Proper sequence of container lifecycle operations
+Writing clear technical documentation in Markdown
+Challenges Encountered
+
+Understanding how port mapping connects host and container ports
+Remembering the exact order and syntax of Docker commands
+Distinguishing between container images and running containers
